@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Management</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Management</h1>
+
+        <!-- Add Doctor Details Section -->
+        <form id="addDoctorForm">
+            <h2>Add New Doctor</h2>
+            <label for="doctor-id">Doctor ID:</label>
+            <input type="text" id="doctor-id" name="doctor_id" required>
+            
+            <label for="doctor-name">Doctor Name:</label>
+            <input type="text" id="doctor-name" name="doctor_name" required>
+            
+            <label for="doctor-specialization">Specialization:</label>
+            <input type="text" id="doctor-specialization" name="doctor_specialization" required>
+            
+            <label for="doctor-age">Age:</label>
+            <input type="number" id="doctor-age" name="doctor_age" min="25" max="70" required>
+            
+            <label for="doctor-experience">Years of Experience:</label>
+            <input type="number" id="doctor-experience" name="doctor_experience" min="0" required>
+            
+            <button type="submit">Add Doctor</button>
+        </form>
+
+        <!-- Fetch Doctor Details Section -->
+        <form id="fetchDoctorForm">
+            <h2>Fetch Doctor Details</h2>
+            <label for="fetch-doctor-id">Doctor ID:</label>
+            <input type="text" id="fetch-doctor-id" name="doctor_id" required>
+            
+            <button type="submit">Fetch Details</button>
+        </form>
+    </div>
+</body>
+</html>

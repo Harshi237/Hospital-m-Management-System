@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient History</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient History Management</h1>
+
+        <!-- Add Patient History -->
+        <form id="addHistoryForm">
+            <h2>Add Patient History</h2>
+            <label for="patient-id">Patient ID:</label>
+            <input type="text" id="patient-id" name="patient_id" required>
+
+            <label for="doctor-id">Doctor ID:</label>
+            <input type="text" id="doctor-id" name="doctor_id" required>
+
+            <label for="history-date">Date:</label>
+            <input type="date" id="history-date" name="date" required>
+
+            <button type="submit">Add History</button>
+        </form>
+
+        <!-- Retrieve History by Patient ID -->
+        <form id="retrievePatientHistoryForm">
+            <h2>Retrieve History by Patient ID</h2>
+            <label for="retrieve-patient-id">Patient ID:</label>
+            <input type="text" id="retrieve-patient-id" name="patient_id" required>
+
+            <button type="submit">Retrieve History</button>
+        </form>
+
+        <!-- Retrieve History by Doctor ID -->
+        <form id="retrieveDoctorHistoryForm">
+            <h2>Retrieve History by Doctor ID</h2>
+            <label for="retrieve-doctor-id">Doctor ID:</label>
+            <input type="text" id="retrieve-doctor-id" name="doctor_id" required>
+
+            <button type="submit">Retrieve History</button>
+        </form>
+    </div>
+</body>
+</html>

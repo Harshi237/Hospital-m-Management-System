@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Management</title>
+    <link rel="stylesheet" href="holiday.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Holiday Management</h1>
+
+        <!-- Add Holiday Section -->
+        <form id="addHolidayForm">
+            <h2>Add Holiday</h2>
+            <label for="holiday-doctor-id">Doctor ID:</label>
+            <input type="text" id="holiday-doctor-id" name="doctor_id" required>
+            
+            <label for="holiday-date">Holiday Date:</label>
+            <input type="date" id="holiday-date" name="holiday_date" required>
+            
+            <button type="submit">Add Holiday</button>
+        </form>
+
+        <!-- Delete Holiday Section -->
+        <form id="deleteHolidayForm">
+            <h2>Delete Holiday</h2>
+            <label for="delete-doctor-id">Doctor ID:</label>
+            <input type="text" id="delete-doctor-id" name="doctor_id" required>
+            
+            <label for="delete-holiday-date">Holiday Date:</label>
+            <input type="date" id="delete-holiday-date" name="holiday_date" required>
+            
+            <button type="submit">Delete Holiday</button>
+        </form>
+
+        <!-- Retrieve Holiday Section -->
+        <form id="retrieveHolidayForm">
+            <h2>Retrieve Holidays</h2>
+            <label for="retrieve-doctor-id">Doctor ID:</label>
+            <input type="text" id="retrieve-doctor-id" name="doctor_id" required>
+            
+            <button type="submit">Retrieve Holidays</button>
+        </form>
+    </div>
+</body>
+</html>

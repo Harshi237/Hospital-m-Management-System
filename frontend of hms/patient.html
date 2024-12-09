@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Management</title>
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Management</h1>
+
+        <!-- Add New Patient -->
+        <form id="newPatientForm">
+            <h2>Add New Patient</h2>
+            <label for="new-patient-id">Patient ID:</label>
+            <input type="text" id="new-patient-id" name="patient_id" required>
+
+            <label for="new-patient-fname">First Name:</label>
+            <input type="text" id="new-patient-fname" name="fname" required>
+
+            <label for="new-patient-lname">Last Name:</label>
+            <input type="text" id="new-patient-lname" name="lname" required>
+
+            <label for="new-patient-problem">Problem Description:</label>
+            <textarea id="new-patient-problem" name="problem" rows="3" required></textarea>
+
+            <label for="new-doctor-name">Doctor Name:</label>
+            <input type="text" id="new-doctor-name" name="doc_name" required>
+
+            <label for="new-doctor-id">Doctor ID:</label>
+            <input type="text" id="new-doctor-id" name="doc_id" required>
+
+            <label for="new-patient-age">Age:</label>
+            <input type="number" id="new-patient-age" name="age" required>
+
+            <button type="submit">Add Patient</button>
+        </form>
+
+        <!-- Update Old Patient -->
+        <form id="oldPatientForm">
+            <h2>Update Existing Patient</h2>
+            <label for="old-patient-id">Patient ID:</label>
+            <input type="text" id="old-patient-id" name="patient_id" required>
+
+            <label for="old-patient-fname">First Name:</label>
+            <input type="text" id="old-patient-fname" name="fname" required>
+
+            <label for="old-patient-lname">Last Name:</label>
+            <input type="text" id="old-patient-lname" name="lname" required>
+
+            <label for="old-patient-problem">Problem Description:</label>
+            <textarea id="old-patient-problem" name="problem" rows="3" required></textarea>
+
+            <label for="old-doctor-name">Doctor Name:</label>
+            <input type="text" id="old-doctor-name" name="doc_name" required>
+
+            <label for="old-doctor-id">Doctor ID:</label>
+            <input type="text" id="old-doctor-id" name="doc_id" required>
+
+            <label for="old-patient-age">Age:</label>
+            <input type="number" id="old-patient-age" name="age" required>
+
+            <button type="submit">Update Patient</button>
+        </form>
+    </div>
+</body>
+</html>
