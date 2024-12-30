@@ -3,57 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Management</title>
+    <title>Add Appointment</title>
     <link rel="stylesheet" href="appointment.css">
 </head>
 <body>
     <div class="container">
-        <h1>Hospital Appointment Management</h1>
-
-        <!-- Add Appointment Section -->
-        <form id="addAppointmentForm">
-            <h2>Add Appointment</h2>
-            <label for="add-patient-id">Patient ID:</label>
-            <input type="text" id="add-patient-id" name="patient_id" required>
-            
-            <label for="add-doctor-id">Doctor ID:</label>
-            <input type="text" id="add-doctor-id" name="doctor_id" required>
-            
-            <label for="add-date">Date:</label>
-            <input type="date" id="add-date" name="date" required>
-            
-            <label for="add-time">Time Slot:</label>
-            <input type="time" id="add-time" name="time" required>
-            
-            <button type="submit">Add Appointment</button>
-        </form>
-
-        <!-- Delete Appointment Section -->
-        <form id="deleteAppointmentForm">
-            <h2>Delete Appointment</h2>
-            <label for="delete-patient-id">Patient ID:</label>
-            <input type="text" id="delete-patient-id" name="patient_id" required>
-            
-            <label for="delete-doctor-id">Doctor ID:</label>
-            <input type="text" id="delete-doctor-id" name="doctor_id" required>
-            
-            <button type="submit">Delete Appointment</button>
-        </form>
-
-        <!-- Modify Appointment Section -->
-        <form id="modifyAppointmentForm">
-            <h2>Modify Appointment</h2>
-            <label for="modify-patient-id">Patient ID:</label>
-            <input type="text" id="modify-patient-id" name="patient_id" required>
-            
-            <label for="modify-doctor-id">Doctor ID:</label>
-            <input type="text" id="modify-doctor-id" name="doctor_id" required>
-            
-            <label for="modify-time">New Time Slot:</label>
-            <input type="time" id="modify-time" name="time" required>
-            
-            <button type="submit">Modify Appointment</button>
-        </form>
+        <div class="form-wrapper">
+            <h1>ADD APPOINTMENT</h1>
+            <form>
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" placeholder="Enter patient name">
+                
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob">
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+                
+                <label for="timeSlot">Time Slot:</label>
+                <input type="time" id="timeSlot">
+                
+                <label for="doctorId">Doctor ID: <span>(optional)</span></label>
+                <input type="text" id="doctorId" placeholder="Enter doctor ID">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
